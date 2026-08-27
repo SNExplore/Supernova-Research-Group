@@ -3,128 +3,173 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10251d">
-  <meta name="description" content="清华大学超新星偏振团队：通过偏振观测与理论建模研究恒星爆发的几何、超新星激波和星周环境。">
-  <meta property="og:title" content="超新星偏振团队 | SN Polarization Group">
-  <meta property="og:description" content="用偏振之光，测绘恒星爆发的形状。">
+  <meta name="theme-color" content="#07131f">
+  <meta name="description" content="清华大学超新星偏振团队：通过快速响应观测、光谱偏振与三维辐射转移研究恒星爆发的几何。">
+  <meta property="og:title" content="超新星偏振团队 | Supernova Polarization Group">
+  <meta property="og:description" content="读取光的方向，重建恒星爆发的三维形状。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://snexplore.github.io/Supernova-Research-Group/">
-  <meta property="og:image" content="https://snexplore.github.io/Supernova-Research-Group/images/og.png">
+  <meta property="og:image" content="https://snexplore.github.io/Supernova-Research-Group/images/hero-polarization-v2.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="超新星偏振团队 | SN Polarization Group">
-  <meta name="twitter:description" content="用偏振之光，测绘恒星爆发的形状。">
-  <meta name="twitter:image" content="https://snexplore.github.io/Supernova-Research-Group/images/og.png">
-  <title>超新星偏振团队 | SN Polarization Group</title>
+  <meta name="twitter:title" content="超新星偏振团队 | Supernova Polarization Group">
+  <meta name="twitter:description" content="读取光的方向，重建恒星爆发的三维形状。">
+  <meta name="twitter:image" content="https://snexplore.github.io/Supernova-Research-Group/images/hero-polarization-v2.png">
+  <title>超新星偏振团队 | Supernova Polarization Group</title>
+  <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="css/team.css">
   <script>document.documentElement.classList.add('js')</script>
   <script src="js/team.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
+
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="超新星偏振团队首页">
       <span class="brand-mark" aria-hidden="true"><i></i></span>
-      <span>SN Polarization Group</span>
+      <span><b>SNEXPLORE</b><small>Supernova Polarization Group</small></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
     <nav id="site-nav" aria-label="主导航">
-      <a href="#research">研究</a><a href="#people">成员</a><a href="#publications">论文</a><a class="nav-cta" href="#contact">联系我们</a>
+      <a href="#research">研究</a>
+      <a href="highlights.html">亮点工作</a>
+      <a href="#people">团队</a>
+      <a href="#publications">论文</a>
+      <a class="nav-cta" href="https://arxiv.org/list/astro-ph/recent" target="_blank" rel="noopener">ArXiv 天文 ↗</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
+      <img class="hero-image" src="images/hero-polarization-v2.png" alt="非球对称超新星抛射物及沿壳层切向排列的偏振电矢量科学艺术图" fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> TSINGHUA ASTROPHYSICS</p>
-        <h1>用偏振之光，<br>测绘恒星爆发的形状。</h1>
-        <p class="hero-lead">我们观测宇宙中的瞬变与爆发现象，从微弱的偏振信号中，还原超新星不可直接分辨的三维几何与物理过程。</p>
+        <p class="eyebrow"><span></span> TSINGHUA ASTROPHYSICS · POLARIMETRY</p>
+        <h1>读取光的方向，<br>重建爆炸的形状。</h1>
+        <p class="hero-lead">我们从微弱的偏振信号中测量超新星不可直接分辨的几何，追踪激波如何冲出恒星、抛射物如何展开，以及爆发前的物质如何塑造观测。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#research">探索我们的研究 <span aria-hidden="true">↗</span></a>
-          <a class="button text-button" href="#publications">浏览论文 <span aria-hidden="true">↗</span></a>
+          <a class="button primary" href="highlights.html">查看亮点工作 <span aria-hidden="true">↗</span></a>
+          <a class="button ghost" href="#research">了解研究方向</a>
         </div>
       </div>
-      <figure class="hero-visual">
-        <img src="images/cas-a.jpg" alt="詹姆斯·韦布空间望远镜拍摄的仙后座 A 超新星遗迹">
-        <div class="polarization-glyph" aria-hidden="true"><span class="ring r1"></span><span class="ring r2"></span><span class="axis"></span><span class="axis axis-2"></span></div>
-        <figcaption><span>CAS A / NIRCAM</span><span>NASA · ESA · CSA · STScI</span></figcaption>
-      </figure>
+      <div class="hero-note">
+        <span>POLARIZATION FIELD</span>
+        <p>图中短线表示偏振电矢量，其方向沿抛射物轮廓的切向分布，垂直于局部径向。</p>
+      </div>
+      <div class="hero-index" aria-hidden="true">Q / U</div>
     </section>
 
-    <section class="signal-strip" aria-label="研究重点速览">
-      <p>RESEARCH SIGNALS</p>
-      <div><strong>01</strong><span>超新星<br>光谱偏振</span></div>
-      <div><strong>02</strong><span>爆发几何<br>与激波突破</span></div>
-      <div><strong>03</strong><span>星周物质<br>与宇宙尘埃</span></div>
+    <section class="signal-strip" aria-label="团队研究速览">
+      <p>OBSERVE · MEASURE · MODEL</p>
+      <div><strong>01</strong><span>快速响应<br>捕捉爆发初刻</span></div>
+      <div><strong>02</strong><span>光谱偏振<br>解析非球对称性</span></div>
+      <div><strong>03</strong><span>三维建模<br>连接信号与结构</span></div>
     </section>
 
     <section class="manifesto section-pad reveal">
-      <p class="section-kicker">WHY POLARIZATION</p>
       <div>
-        <h2>天体无法被空间分辨，<br>光的方向仍保存着它的形状。</h2>
-        <p>超新星看起来只是遥远的一个光点。偏振把这个光点展开为几何信息：爆炸是否对称、物质如何分布、激波如何穿过恒星表面，以及尘埃如何改变光的传播。</p>
+        <p class="section-kicker">WHY POLARIZATION / 为什么是偏振</p>
+        <h2>望远镜只看见一个光点。<br>偏振让我们读出它的方向。</h2>
       </div>
-      <span class="big-index" aria-hidden="true">Q/U</span>
+      <div class="manifesto-copy">
+        <p>当一个球对称的电子散射光球被投影到天空时，不同方向的电矢量彼此抵消；一旦抛射物、元素分布或外部环境偏离球对称，抵消便不再完整，净偏振由此成为爆炸几何的探针。</p>
+        <div class="vector-legend" aria-label="偏振方向示意图">
+          <span class="legend-core"></span>
+          <i style="--a:0deg"></i><i style="--a:45deg"></i><i style="--a:90deg"></i><i style="--a:135deg"></i>
+          <b>电矢量 ⟂ 径向</b>
+        </div>
+      </div>
     </section>
 
     <section class="research section-pad" id="research">
       <div class="section-heading reveal">
-        <div><p class="section-kicker">RESEARCH / 研究方向</p><h2>从单个光子，<br>抵达爆炸核心。</h2></div>
-        <p>我们连接快速响应观测、光谱偏振测量与辐射转移建模，追踪恒星死亡过程中的非球对称结构。</p>
+        <div><p class="section-kicker">RESEARCH / 研究方向</p><h2>把爆炸的几何，<br>变成可测量的物理。</h2></div>
+        <p>团队连接观测、数据分析与理论计算，覆盖超新星从激波突破到晚期星周相互作用的完整演化。</p>
       </div>
       <div class="research-grid">
         <article class="research-card reveal">
-          <div class="research-number">01</div><div class="mini-diagram ellipsoid" aria-hidden="true"><i></i><i></i><i></i></div>
-          <h3>超新星光谱偏振</h3><p>使用连续谱与谱线偏振，测量不同类型超新星抛射物的整体形状、元素分布与观测视角。</p><span>SPECTROPOLARIMETRY</span>
+          <div class="research-top"><span>01</span><em>OBSERVATION</em></div>
+          <div class="mini-diagram shell" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>超新星光谱偏振</h3>
+          <p>利用连续谱和谱线偏振，测量抛射物整体形状、不同元素的空间分布与观测视角。</p>
+          <small>SPECTROPOLARIMETRY</small>
         </article>
         <article class="research-card reveal">
-          <div class="research-number">02</div><div class="mini-diagram pulse" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          <h3>早期瞬变与激波突破</h3><p>在爆发后数小时至数天内快速响应，捕捉恒星表面和周围致密物质尚未被抛射物掩盖时的几何。</p><span>RAPID RESPONSE</span>
+          <div class="research-top"><span>02</span><em>TIME DOMAIN</em></div>
+          <div class="mini-diagram pulse" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h3>爆发早期与激波突破</h3>
+          <p>在爆发后数小时至数天内快速响应，捕捉恒星表面和致密星周物质尚未被抛射物掩盖时的几何。</p>
+          <small>RAPID RESPONSE</small>
         </article>
         <article class="research-card reveal">
-          <div class="research-number">03</div><div class="mini-diagram torus" aria-hidden="true"><i></i></div>
-          <h3>星周环境与理论建模</h3><p>以三维蒙特卡洛方法连接偏振信号、星周盘/环结构、双星相互作用和爆发前质量损失。</p><span>RADIATIVE TRANSFER</span>
+          <div class="research-top"><span>03</span><em>SIMULATION</em></div>
+          <div class="mini-diagram torus" aria-hidden="true"><i></i><b></b></div>
+          <h3>三维偏振辐射转移</h3>
+          <p>以蒙特卡洛方法连接偏振信号、非球对称抛射物、星周盘或环结构及爆发前质量损失。</p>
+          <small>RADIATIVE TRANSFER</small>
         </article>
       </div>
     </section>
 
-    <section class="feature-story">
+    <section class="featured-work">
+      <div class="feature-label">FEATURED WORK · 2025</div>
       <div class="feature-copy reveal">
-        <p class="section-kicker light">FEATURED RESULT / 2025</p>
-        <h2>在一颗恒星爆炸的<br>“婴儿期”看见它的形状</h2>
-        <p>团队在 II 型超新星 SN 2024ggi 爆发约 1.2 天后取得光谱偏振观测，发现激波突破与随后出现的富氢包层共享清晰的对称轴。</p>
-        <div class="feature-links">
-          <a href="https://doi.org/10.1126/sciadv.adx2925" target="_blank" rel="noopener">阅读 Science Advances 论文 <span>↗</span></a>
-          <a href="https://www.tsinghua.edu.cn/info/1175/122494.htm" target="_blank" rel="noopener">清华大学新闻 <span>↗</span></a>
-        </div>
+        <p class="section-kicker light">SN 2024ggi / SCIENCE ADVANCES</p>
+        <h2>爆发约 1.2 天后，<br>看见贯穿恒星爆炸的对称轴。</h2>
+        <p>团队取得了极早期光谱偏振观测。测量显示，激波突破与随后显现的富氢包层共享清晰的轴对称结构，为理解大质量恒星爆炸机制提供直接的几何约束。</p>
+        <a class="button primary" href="highlights.html#sn2024ggi">进入亮点工作页面 <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="feature-data" aria-label="关键研究数据">
-        <div><strong>1.2</strong><span>days after explosion<br>首次偏振观测</span></div>
-        <div><strong>1</strong><span>persistent symmetry axis<br>贯穿爆发的对称轴</span></div>
-        <div class="qu-plot" aria-hidden="true"><span>Q</span><span>U</span><i></i><b></b></div>
+      <div class="feature-metrics" aria-label="研究关键数据">
+        <div><span>FIRST EPOCH</span><strong>≈ 1.2</strong><small>爆发后天数</small></div>
+        <div><span>GEOMETRY</span><strong>1 AXIS</strong><small>持续的对称轴</small></div>
+        <div class="qu-field" aria-hidden="true"><span>Q</span><span>U</span><i></i><b></b></div>
       </div>
     </section>
 
     <section class="people section-pad" id="people">
       <div class="section-heading reveal">
-        <div><p class="section-kicker">PEOPLE / 团队成员</p><h2>一起追踪<br>稍纵即逝的宇宙。</h2></div>
-        <p>团队立足清华大学物理系，与国内外观测者和理论研究者协作，开展超新星偏振研究。</p>
+        <div><p class="section-kicker">PEOPLE / 团队成员</p><h2>共同追踪<br>稍纵即逝的宇宙。</h2></div>
+        <p>团队立足清华大学物理系，在观测与理论之间协作，围绕超新星偏振、时域天文与爆发几何开展研究。</p>
       </div>
-      <div class="people-grid">
-        <article class="person-card lead-card reveal">
-          <div class="portrait type-yy" aria-label="杨轶姓名字母图形"><span>YY</span><i></i></div>
-          <div class="person-info"><p>PRINCIPAL INVESTIGATOR</p><h3>杨轶 <small>Yi Yang</small></h3><p class="role">清华大学物理系助理教授</p><p>观测天文学家，研究超新星及其他宇宙爆发现象的几何、早期演化与宇宙尘埃。</p><a href="people/yi-yang.html">查看成员介绍 <span>↗</span></a></div>
+
+      <div class="leadership-grid">
+        <article class="leader-card reveal">
+          <a class="leader-photo" href="people/yi-yang.html" aria-label="查看杨轶成员介绍">
+            <img src="images/yi-yang-official.jpg" alt="杨轶，清华大学物理系助理教授" loading="lazy">
+            <span>PI / 01</span>
+          </a>
+          <div class="leader-info">
+            <p>PRINCIPAL INVESTIGATOR · 团队负责人</p>
+            <h3>杨轶 <small>Yi Yang</small></h3>
+            <span class="role">清华大学物理系助理教授</span>
+            <p>观测天文学家，通过偏振光研究超新星及其他宇宙爆发现象的几何、早期演化与宇宙尘埃。</p>
+            <div class="person-links"><a href="people/yi-yang.html">成员介绍 ↗</a><a href="https://www.phys.tsinghua.edu.cn/info/1101/5858.htm" target="_blank" rel="noopener">清华主页 ↗</a></div>
+          </div>
         </article>
-        <article class="person-card reveal">
-          <div class="portrait type-xw" aria-label="文旭东姓名字母图形"><span>XW</span><i></i></div>
-          <div class="person-info"><p>POSTDOCTORAL FELLOW</p><h3>文旭东 <small>Xudong Wen</small></h3><p class="role">清华大学物理系博士后</p><p>研究超新星偏振的理论解释与数值建模，关注星周相互作用、爆炸非对称性及双星前身星系统。</p><a href="people/xudong-wen.html">查看成员介绍 <span>↗</span></a></div>
+
+        <article class="leader-card fellow-card reveal">
+          <div class="portrait-monogram"><span>XW</span><i></i></div>
+          <div class="leader-info">
+            <p>POSTDOCTORAL FELLOW</p>
+            <h3>文旭东 <small>Xudong Wen</small></h3>
+            <span class="role">博士后</span>
+            <p>研究超新星偏振的理论解释与三维蒙特卡洛辐射转移，关注爆炸非对称性与星周相互作用。</p>
+            <div class="person-links"><a href="people/xudong-wen.html">成员介绍 ↗</a><a href="https://arxiv.org/search/?query=Xudong+Wen&amp;searchtype=author" target="_blank" rel="noopener">ArXiv ↗</a></div>
+          </div>
         </article>
+      </div>
+
+      <div class="member-grid">
+        <article class="member-card reveal"><span class="member-index">03</span><div class="member-avatar">莫</div><p>GRADUATE STUDENT</p><h3>莫森宇</h3><span>研究生</span></article>
+        <article class="member-card reveal"><span class="member-index">04</span><div class="member-avatar">陶</div><p>UNDERGRADUATE</p><h3>陶润泽</h3><span>本科生</span></article>
+        <article class="member-card reveal"><span class="member-index">05</span><div class="member-avatar">刘</div><p>UNDERGRADUATE</p><h3>刘乐融</h3><span>本科生</span></article>
+        <article class="member-card reveal"><span class="member-index">06</span><div class="member-avatar">张</div><p>UNDERGRADUATE</p><h3>张子恒</h3><span>本科生</span></article>
       </div>
     </section>
 
     <section class="publications section-pad" id="publications">
       <div class="section-heading publication-heading reveal">
         <div><p class="section-kicker">PUBLICATIONS / 论文</p><h2>近期与代表性工作</h2></div>
-        <p>以下聚焦团队的超新星偏振研究；杨轶的完整论文列表可在 <a href="https://ui.adsabs.harvard.edu/public-libraries/lmltK2eiSIqWNGR-h2XAeg" target="_blank" rel="noopener">NASA ADS ↗</a> 查看。</p>
+        <p>团队成员的完整论文列表可在 <a href="https://ui.adsabs.harvard.edu/public-libraries/lmltK2eiSIqWNGR-h2XAeg" target="_blank" rel="noopener">NASA ADS ↗</a> 查看。</p>
       </div>
       <div class="publication-tools reveal" aria-label="论文筛选">
         <div class="filter-group" role="group" aria-label="按作者筛选">
@@ -135,10 +180,10 @@
         <span class="publication-count" aria-live="polite">13 篇</span>
       </div>
       <ol class="publication-list">
-        <li data-authors="yi xudong" class="reveal"><span class="pub-year">2026</span><div><p>ARXIV PREPRINT</p><h3>Pinning Down the Geometry of the Type Ic Broad-Line Supernova 2026gzf</h3><span><b>Xudong Wen</b>, <b>Yi Yang</b>, Jing Lu, et al.</span></div><a href="https://arxiv.org/abs/2606.18881" target="_blank" rel="noopener" aria-label="打开论文 Pinning Down the Geometry of SN 2026gzf">↗</a></li>
+        <li data-authors="yi xudong" class="reveal"><span class="pub-year">2026</span><div><p>APJL · ACCEPTED</p><h3>Pinning Down the Geometry of the Type Ic Broad-Line Supernova 2026gzf</h3><span><b>Xudong Wen</b>, <b>Yi Yang</b>, Jing Lu, et al.</span></div><a href="https://arxiv.org/abs/2606.18881" target="_blank" rel="noopener" aria-label="打开 SN 2026gzf 论文">↗</a></li>
         <li data-authors="yi xudong" class="reveal"><span class="pub-year">2025</span><div><p>SCIENCE ADVANCES</p><h3>An axisymmetric shock breakout indicated by prompt polarized emission from the type II supernova 2024ggi</h3><span><b>Yi Yang</b>, <b>Xudong Wen</b>, Lifan Wang, et al.</span></div><a href="https://doi.org/10.1126/sciadv.adx2925" target="_blank" rel="noopener" aria-label="打开 SN 2024ggi 论文">↗</a></li>
         <li data-authors="yi" class="reveal"><span class="pub-year">2025</span><div><p>ARXIV PREPRINT</p><h3>Spectropolarimetric Evolution of SN 2023ixf: an Asymmetric Explosion in a Confined Aspherical Circumstellar Medium</h3><span>Sergiy S. Vasylyev, Luc Dessart, <b>Yi Yang</b>, et al.</span></div><a href="https://arxiv.org/abs/2505.03975" target="_blank" rel="noopener" aria-label="打开 SN 2023ixf 演化论文">↗</a></li>
-        <li data-authors="yi xudong" class="reveal"><span class="pub-year">2024</span><div><p>ARXIV PREPRINT</p><h3>Supernova Polarization Signals From the Interaction with a Dense Circumstellar Disk</h3><span><b>Xudong Wen</b>, He Gao, <b>Yi Yang</b>, et al.</span></div><a href="https://arxiv.org/abs/2407.20720" target="_blank" rel="noopener" aria-label="打开致密星周盘偏振论文">↗</a></li>
+        <li data-authors="yi xudong" class="reveal"><span class="pub-year">2024</span><div><p>THE ASTROPHYSICAL JOURNAL</p><h3>Supernova Polarization Signals From the Interaction with a Dense Circumstellar Disk</h3><span><b>Xudong Wen</b>, He Gao, <b>Yi Yang</b>, et al.</span></div><a href="https://arxiv.org/abs/2407.20720" target="_blank" rel="noopener" aria-label="打开致密星周盘偏振论文">↗</a></li>
         <li data-authors="xudong" class="reveal"><span class="pub-year">2023</span><div><p>THE ASTROPHYSICAL JOURNAL</p><h3>Polarization Signature of Companion-Fed Supernovae Arising from BH–NS/BH Progenitor Systems</h3><span><b>Xudong Wen</b>, He Gao, Shunke Ai, et al.</span></div><a href="https://arxiv.org/abs/2308.11913" target="_blank" rel="noopener" aria-label="打开伴星供能超新星论文">↗</a></li>
         <li data-authors="yi" class="reveal"><span class="pub-year">2023</span><div><p>THE ASTROPHYSICAL JOURNAL LETTERS</p><h3>Early-time Spectropolarimetry of the Aspherical Type II Supernova SN 2023ixf</h3><span>Sergiy S. Vasylyev, <b>Yi Yang</b>, Alexei V. Filippenko, et al.</span></div><a href="https://arxiv.org/abs/2307.01268" target="_blank" rel="noopener" aria-label="打开 SN 2023ixf 早期论文">↗</a></li>
         <li data-authors="yi" class="reveal"><span class="pub-year">2023</span><div><p>MONTHLY NOTICES OF THE RAS</p><h3>Spectropolarimetry of the Type IIP supernova 2021yja: an unusually high continuum polarization</h3><span>Sergiy S. Vasylyev, <b>Yi Yang</b>, Kishore C. Patra, et al.</span></div><a href="https://arxiv.org/abs/2303.06497" target="_blank" rel="noopener" aria-label="打开 SN 2021yja 论文">↗</a></li>
@@ -151,13 +196,28 @@
       </ol>
     </section>
 
+    <section class="arxiv-band reveal" aria-label="ArXiv 天文专栏入口">
+      <div><p>OPEN RESEARCH / 每日更新</p><h2>ArXiv Astrophysics</h2></div>
+      <p>浏览天体物理学最新预印本，涵盖高能天体物理、太阳与恒星、星系、宇宙学、仪器方法等方向。</p>
+      <a href="https://arxiv.org/list/astro-ph/recent" target="_blank" rel="noopener">进入 ArXiv 天文专栏 <span>↗</span></a>
+    </section>
+
     <section class="contact section-pad" id="contact">
       <div class="contact-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
-      <div class="contact-copy reveal"><p class="section-kicker light">CONTACT / 联系我们</p><h2>共同追问，<br>一颗恒星如何死去。</h2><p>欢迎围绕超新星、时域天文与偏振观测开展合作。对加入团队、访问交流或学术报告感兴趣，也欢迎来信。</p><a class="button primary" href="mailto:yi_yang@mail.tsinghua.edu.cn">yi_yang@mail.tsinghua.edu.cn <span>↗</span></a></div>
-      <address><span>清华大学物理系</span><span>北京市海淀区清华园</span><span>100084 · 理科楼 W311</span></address>
+      <div class="contact-copy reveal">
+        <p class="section-kicker light">CONTACT / 联系我们</p>
+        <h2>共同追问，<br>一颗恒星如何死去。</h2>
+        <p>欢迎围绕超新星、时域天文与偏振观测开展合作。对加入团队、访问交流或学术报告感兴趣，也欢迎来信。</p>
+        <a class="button primary" href="mailto:yi_yang@mail.tsinghua.edu.cn">yi_yang@mail.tsinghua.edu.cn <span aria-hidden="true">↗</span></a>
+      </div>
+      <address><span>清华大学物理系</span><span>北京市海淀区清华园</span><span>100084 · 物理楼 W311</span></address>
     </section>
   </main>
 
-  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span>SN Polarization Group</span></a><p>© 2026 超新星偏振团队</p><p>IMAGE: NASA / ESA / CSA / STScI</p></footer>
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i></span><span><b>SNEXPLORE</b><small>Supernova Polarization Group</small></span></a>
+    <p>© 2026 超新星偏振团队</p>
+    <p><a href="https://www.phys.tsinghua.edu.cn/info/1101/5858.htm" target="_blank" rel="noopener">杨轶头像来源：清华大学物理系 ↗</a></p>
+  </footer>
 </body>
 </html>
