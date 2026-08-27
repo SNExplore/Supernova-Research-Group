@@ -11,7 +11,7 @@
 
 ## 网站地址
 
-<https://doraemon86.github.io/Supernova-Research-Group/>
+<https://snexplore.github.io/Supernova-Research-Group/>
 
 ## 内容维护
 
