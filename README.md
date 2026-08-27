@@ -23,7 +23,8 @@
 - 样式：`css/team.css`
 - 交互：`js/team.js`
 - 图片：`images/`
+- 视频：`videos/`
 
 推送到 `main` 分支后，GitHub Actions 会自动发布到 GitHub Pages。首次发布前，需要在仓库的 **Settings → Pages → Build and deployment** 中将 **Source** 设为 **GitHub Actions**。
 
-网站主视觉为项目原创生成图像；杨轶头像来自清华大学物理系官方个人页面。
+网站主视觉为项目原创生成图像；杨轶头像来自清华大学物理系官方个人页面。SN 2024ggi 亮点背景艺术图及艺术动画由 ESO/L. Calçada 制作，依据 CC BY 4.0 使用。
