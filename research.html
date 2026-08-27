@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#03070b">
+  <meta name="description" content="超新星偏振研究科普：从电子散射、Stokes 参数和 Q–U 平面，到 Ia 型超新星、早期激波突破与相互作用超新星的三维几何。">
+  <meta property="og:title" content="超新星偏振研究科普 | SNExplore">
+  <meta property="og:description" content="望远镜只看见一个光点，偏振让我们读出恒星爆炸的方向、形状与化学结构。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://snexplore.github.io/Supernova-Research-Group/research.html">
+  <meta property="og:image" content="https://snexplore.github.io/Supernova-Research-Group/images/hero-supernova-explosion-v6.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>超新星偏振研究科普 | SNExplore</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/research.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="js/team.js" defer></script>
+</head>
+<body class="science-page">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header subpage-header" data-header>
+    <a class="brand" href="index.html" aria-label="返回超新星偏振团队首页">
+      <span class="brand-mark" aria-hidden="true"><i></i></span>
+      <span><b>SNEXPLORE</b><small>Supernova Polarization Group</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+    <nav id="site-nav" aria-label="主导航">
+      <a href="research.html" aria-current="page">研究科普</a>
+      <a href="highlights.html">亮点工作</a>
+      <a href="index.html#people">团队</a>
+      <a href="index.html#publications">论文</a>
+      <a class="nav-cta" href="https://arxiv.org/list/astro-ph/recent" target="_blank" rel="noopener">ArXiv 天文 ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="science-hero">
+      <div class="science-hero-copy">
+        <p class="eyebrow"><span></span> EXPLAINER · SUPERNOVA POLARIMETRY</p>
+        <h1>一个光点，<br>如何显露三维爆炸？</h1>
+        <p>超新星远得无法直接分辨。光谱告诉我们“有什么、运动多快”，偏振则增加了方向信息：光在天空平面上的电矢量如何排列。把波长、时间和偏振联合起来，我们可以约束爆炸的整体形状、元素分布、对称轴与观测视角。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#principle">从基本原理开始 <span aria-hidden="true">↓</span></a>
+          <a class="button ghost" href="#directions">查看三条研究方向</a>
+        </div>
+      </div>
+      <aside class="science-equation" aria-label="线偏振的基本观测量">
+        <p>LINEAR POLARIZATION</p>
+        <div><span>偏振度</span><strong>p = √(Q² + U²) / I</strong></div>
+        <div><span>偏振角</span><strong>θ = ½ atan2(U, Q)</strong></div>
+        <small>Q、U 是两个线偏振 Stokes 参数；½ 来自电矢量 180° 的方向简并。</small>
+      </aside>
+    </section>
+
+    <nav class="chapter-nav" aria-label="科普页面目录">
+      <a href="#principle"><b>01</b> 为什么能看见几何</a>
+      <a href="#observables"><b>02</b> 我们实际测量什么</a>
+      <a href="#directions"><b>03</b> 三条研究方向</a>
+      <a href="#workflow"><b>04</b> 从预警到三维模型</a>
+      <a href="#faq"><b>05</b> 常见问题</a>
+    </nav>
+
+    <section class="science-section principle-section" id="principle">
+      <div class="science-heading reveal">
+        <p class="section-kicker">01 / PHYSICAL PRINCIPLE</p>
+        <h2>偏振不是一张照片，<br>而是被压缩的几何信息。</h2>
+      </div>
+      <div class="principle-grid">
+        <div class="long-copy reveal">
+          <p>光是电磁波。普通亮度只记录单位时间收到多少能量；线偏振还记录电场振动在天空平面上偏向哪个方向。超新星早期的光球以自由电子散射为主。来自光球边缘的光，在局部会产生近似沿轮廓切向的偏振。</p>
+          <p>如果光球完全球对称，来自不同方位的电矢量在整个未分辨圆盘上成对抵消，积分后的净偏振接近零。只要整体轮廓拉长、表面亮度不均、某些元素遮住部分光球，或外部星周物质呈盘、环和团块结构，这种抵消就会不完整，望远镜便测到非零偏振。</p>
+          <p class="science-callout"><strong>关键点：</strong>望远镜仍然没有“拍到”超新星表面。偏振提供的是对几何模型非常敏感的积分约束；必须与光谱、时间演化和辐射转移计算共同解释。</p>
+        </div>
+        <figure class="cancellation-figure reveal">
+          <svg viewBox="0 0 680 370" role="img" aria-label="球对称光球偏振相互抵消，而非球对称光球留下净偏振的概念图">
+            <defs>
+              <radialGradient id="sphere-glow"><stop offset="0" stop-color="#fff7dd"/><stop offset=".32" stop-color="#ff9b63"/><stop offset="1" stop-color="#30100e"/></radialGradient>
+              <radialGradient id="ellipse-glow"><stop offset="0" stop-color="#fff7dd"/><stop offset=".3" stop-color="#ff735a"/><stop offset="1" stop-color="#251013"/></radialGradient>
+              <marker id="net-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#73dce8"/></marker>
+            </defs>
+            <g transform="translate(175 170)">
+              <circle r="105" fill="url(#sphere-glow)" stroke="rgba(255,255,255,.25)"/>
+              <g class="tangent-field">
+                <path d="M-18-112H18M-18 112H18M-112-18V18M112-18V18M-91-78L-66-103M66 103L91 78M66-103L91-78M-91 78L-66 103"/>
+              </g>
+              <text x="0" y="155">球对称：方向成对抵消</text>
+              <text class="result" x="0" y="185">NET p ≈ 0</text>
+            </g>
+            <g transform="translate(505 170)">
+              <ellipse rx="120" ry="82" transform="rotate(-13)" fill="url(#ellipse-glow)" stroke="rgba(255,255,255,.25)"/>
+              <path class="occulting-clump" d="M44-72c32-9 62 4 70 26-17 15-39 22-66 18-13-12-14-28-4-44Z"/>
+              <g class="tangent-field">
+                <path d="M-18-96H18M-18 96H18M-126-18V18M126-18V18M-96-65L-73-88M69 82L94 60M72-86L96-64"/>
+              </g>
+              <path class="net-vector" d="M4 125H86" marker-end="url(#net-arrow)"/>
+              <text x="0" y="155">非球对称 / 遮挡：抵消不完整</text>
+              <text class="result" x="0" y="185">NET p &gt; 0</text>
+            </g>
+          </svg>
+          <figcaption>电子散射光球的概念示意。局部切向电矢量只是常用的简化图景；真实信号还受谱线、光深和多次散射影响。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="science-section observable-section" id="observables">
+      <div class="science-heading reveal">
+        <p class="section-kicker">02 / OBSERVABLES</p>
+        <h2>同一个“偏振度”，<br>可能来自完全不同的物理。</h2>
+        <p>因此研究者不会只报告一个百分数，而会同时分析波长、时间、偏振角以及 Q–U 平面的结构。</p>
+      </div>
+      <div class="observable-grid">
+        <article class="observable-card reveal">
+          <span>CONTINUUM</span><h3>连续谱偏振</h3>
+          <p>避开强谱线后测得的偏振，主要约束电子散射光球的整体非球对称性。它更接近“整个抛射物轮廓有多偏离球形”，但仍依赖观测角和密度结构。</p>
+          <strong>整体形状 · 轴比 · 观测视角</strong>
+        </article>
+        <article class="observable-card reveal">
+          <span>LINE POLARIZATION</span><h3>谱线偏振</h3>
+          <p>Si、Ca、O、H 等元素在特定速度层吸收或重新分配光子。如果它们只遮住光球的一部分，谱线位置会出现偏振峰、偏振角转动或 Q–U 环。</p>
+          <strong>元素团块 · 速度层 · 非轴对称结构</strong>
+        </article>
+        <article class="observable-card reveal">
+          <span>TIME SERIES</span><h3>多历元偏振</h3>
+          <p>抛射物膨胀后，光球会逐渐退入更深的质量层。连续观测相当于从外向内做“时间层析”，把表层燃烧、内部爆炸与外部相互作用区分开。</p>
+          <strong>几何演化 · 深度层析 · 相互作用</strong>
+        </article>
+      </div>
+
+      <div class="qu-explainer reveal">
+        <div>
+          <p class="section-kicker">THE Q–U PLANE</p>
+          <h3>把偏振大小与方向放在同一张图里</h3>
+          <p>每个波长或历元都对应 Q–U 平面上的一个点。点沿一条“主轴”排列，通常支持近似轴对称结构；一条谱线画出环，说明偏振角随速度改变，暗示元素分布不能用单一对称轴描述。</p>
+          <ul>
+            <li><b>直线主轴：</b>存在优选方向，但不自动等于完美椭球。</li>
+            <li><b>谱线环：</b>不同速度切片具有不同天空投影方向。</li>
+            <li><b>整体平移：</b>可能包含星际偏振，必须先估计并扣除。</li>
+          </ul>
+        </div>
+        <figure class="large-qu-plot">
+          <svg viewBox="0 0 500 360" role="img" aria-label="Q-U 平面主轴与谱线环的概念示意">
+            <path class="science-axis" d="M45 180H470M250 25V325"/>
+            <path class="science-grid" d="M90 25V325M170 25V325M330 25V325M410 25V325M45 75H470M45 130H470M45 235H470M45 290H470"/>
+            <path class="dominant-axis" d="M84 280L424 70"/>
+            <g class="axis-points"><circle cx="112" cy="265" r="5"/><circle cx="170" cy="224" r="5"/><circle cx="230" cy="190" r="5"/><circle cx="293" cy="151" r="5"/><circle cx="354" cy="111" r="5"/></g>
+            <path class="line-loop" d="M171 225C155 158 212 105 289 109 365 114 385 194 328 237 274 277 196 267 171 225Z"/>
+            <text x="450" y="172">Q</text><text x="259" y="40">U</text><text x="316" y="78">DOMINANT AXIS</text><text x="331" y="256">LINE LOOP</text>
+          </svg>
+          <figcaption>概念示意，不对应某一颗超新星的实测数据。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="science-section directions-section" id="directions">
+      <div class="science-heading reveal">
+        <p class="section-kicker">03 / RESEARCH DIRECTIONS</p>
+        <h2>三条时间尺度不同、<br>却相互连接的研究路径。</h2>
+      </div>
+
+      <article class="direction-row reveal" id="type-ia">
+        <div class="direction-copy">
+          <p class="direction-index">01 · THERMONUCLEAR SUPERNOVAE</p>
+          <h3>Ia 型超新星偏振</h3>
+          <p class="direction-lead">白矮星热核爆炸整体往往接近球对称，但中间质量元素的分布可以明显不均匀。微弱的谱线偏振正适合寻找这些“几何残差”。</p>
+          <p>正常 Ia 型超新星在光学峰值前的连续谱偏振常仅约 0.2–0.3%，说明整体轮廓通常接近球形；Si II、Ca II 等谱线却可表现出更强偏振，揭示外层燃烧产物的团块、单侧分布或观测角效应。通过与多维爆炸模型比较，可以检验延迟爆轰、双爆轰、并合等不同情景预言的几何差异。</p>
+          <p>这也关系到 Ia 型超新星作为宇宙距离标尺的精度：如果亮度和谱线形态依赖观测方向，就需要理解这种方向效应是否引入系统误差。</p>
+          <a class="source-link" href="https://academic.oup.com/mnras/article/509/3/4058/6414002" target="_blank" rel="noopener">阅读团队参与的 SN 2019ein 研究 ↗</a>
+        </div>
+        <figure class="direction-plot">
+          <svg viewBox="0 0 560 340" role="img" aria-label="Ia 型超新星偏振光谱概念图">
+            <path class="science-axis" d="M55 30V290H530"/>
+            <path class="science-grid" d="M55 95H530M55 160H530M55 225H530M145 30V290M250 30V290M355 30V290M460 30V290"/>
+            <path class="continuum-line" d="M55 246C117 248 170 243 225 246S330 244 387 246 466 243 530 245"/>
+            <path class="spectral-line" d="M55 249C108 248 145 246 185 240 209 237 213 120 242 108 271 112 264 225 301 235 337 244 357 234 385 224 413 213 418 155 445 143 472 151 480 224 530 238"/>
+            <path class="line-band" d="M216 30V290M456 30V290"/>
+            <text x="219" y="55">Si II 6355</text><text x="420" y="55">Ca II</text><text x="388" y="266">CONTINUUM</text><text x="455" y="315">波长 λ</text><text x="10" y="35">p (%)</text>
+          </svg>
+          <figcaption>概念偏振谱：连续谱较低，而特定元素谱线出现偏振峰。曲线仅说明诊断逻辑。</figcaption>
+        </figure>
+      </article>
+
+      <article class="direction-row reveal" id="shock-breakout">
+        <div class="direction-copy">
+          <p class="direction-index">02 · THE FIRST HOURS</p>
+          <h3>早期激波突破</h3>
+          <p class="direction-lead">当爆炸激波抵达恒星表面或周围致密物质的光学深度边界，第一批光子突然逃逸。这个阶段持续很短，却最接近爆炸如何被启动。</p>
+          <p>爆发后的数小时至数天内，外层结构会被快速膨胀、复合和星周相互作用重塑。因此需要巡天预警、目标机会申请和大型望远镜协同，把光谱偏振观测尽可能提前。早期偏振可判断突破面是否拉长、是否有清晰对称轴，以及外层星周物质是否改变了天空投影方向。</p>
+          <p>团队对 SN 2024ggi 的光谱偏振从爆发约 1.2 天后开始，测得激波突破具有明确对称轴；后来显露的富氢包层仍保留这一优选方向，为大尺度非球对称爆炸提供了直接证据。</p>
+          <a class="source-link" href="https://doi.org/10.1126/sciadv.adx2925" target="_blank" rel="noopener">阅读 SN 2024ggi 论文 ↗</a>
+        </div>
+        <figure class="direction-plot timeline-plot">
+          <svg viewBox="0 0 560 340" role="img" aria-label="激波突破偏振观测窗口的概念时间序列">
+            <path class="science-axis" d="M55 30V290H530"/>
+            <path class="science-grid" d="M55 95H530M55 160H530M55 225H530M160 30V290M285 30V290M410 30V290"/>
+            <path class="breakout-curve" d="M57 74C94 76 119 86 151 108 184 131 190 206 232 225 270 242 302 180 342 163 390 142 417 186 530 199"/>
+            <path class="window-fill" d="M55 30H230V290H55Z"/>
+            <path class="epoch-line" d="M178 30V290"/>
+            <circle class="epoch-point" cx="178" cy="153" r="7"/>
+            <text x="79" y="52">RAPID-RESPONSE WINDOW</text><text x="187" y="143">≈1.2 d</text><text x="60" y="316">HOURS</text><text x="285" y="316">DAYS</text><text x="10" y="35">p</text>
+          </svg>
+          <figcaption>概念时间序列：越靠近爆发，越有机会在外部物质重塑信号前读出最初几何。</figcaption>
+        </figure>
+      </article>
+
+      <article class="direction-row reveal" id="interaction">
+        <div class="direction-copy">
+          <p class="direction-index">03 · EJECTA–CSM INTERACTION</p>
+          <h3>相互作用超新星的几何演化</h3>
+          <p class="direction-lead">恒星爆发前通过恒星风、脉动或双星作用丢失的物质，并不一定均匀包围恒星。抛射物撞上盘、环、壳层和团块后，新的光源与散射区会不断改变偏振。</p>
+          <p>激波把抛射物动能转化为辐射，可使相互作用超新星异常明亮。窄发射线告诉我们慢速星周气体存在，偏振则进一步约束它在天空中的方向和覆盖比例。多历元观测可追踪主轴是否稳定、偏振角是否旋转，以及发光区从内部抛射物转移到外部激波后的几何变化。</p>
+          <p>若 Q–U 点沿固定主轴演化，结构可能具有长期优选方向；若谱线形成环或主轴随时间转动，则通常需要团块、倾斜结构或多个几何分量。三维蒙特卡洛偏振辐射转移用于把这些轨迹映射回物质分布。</p>
+          <a class="source-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7428271/" target="_blank" rel="noopener">阅读相互作用超新星综述 ↗</a>
+        </div>
+        <figure class="direction-plot interaction-plot">
+          <svg viewBox="0 0 560 340" role="img" aria-label="相互作用超新星的多历元 Q-U 轨迹概念图">
+            <path class="science-axis" d="M45 170H530M280 25V310"/>
+            <path class="science-grid" d="M105 25V310M190 25V310M370 25V310M455 25V310M45 80H530M45 125H530M45 215H530M45 265H530"/>
+            <path class="epoch-track" d="M110 248C145 195 205 144 265 122 334 96 407 115 455 173"/>
+            <path class="interaction-loop" d="M210 151C215 81 303 55 378 94 439 126 418 210 351 237 284 264 211 224 210 151Z"/>
+            <g class="epoch-points"><circle cx="110" cy="248" r="7"/><circle cx="205" cy="144" r="7"/><circle cx="334" cy="96" r="7"/><circle cx="455" cy="173" r="7"/></g>
+            <text x="116" y="275">t₁</text><text x="208" y="135">t₂</text><text x="338" y="85">t₃</text><text x="462" y="165">t₄</text><text x="505" y="160">Q</text><text x="290" y="42">U</text>
+          </svg>
+          <figcaption>概念 Q–U 轨迹：多历元主轴与谱线环共同区分持续轴对称、团块和倾斜结构。</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="science-section workflow-section" id="workflow">
+      <div class="science-heading reveal">
+        <p class="section-kicker">04 / FROM ALERT TO GEOMETRY</p>
+        <h2>一条偏振曲线，<br>要经过怎样的研究流程？</h2>
+      </div>
+      <ol class="workflow-grid">
+        <li class="reveal"><span>01</span><h3>巡天预警</h3><p>从 ATLAS、ZTF、爱因斯坦探针等时域巡天获得新爆发位置、发现时刻和初步分类。</p></li>
+        <li class="reveal"><span>02</span><h3>快速观测</h3><p>申请目标机会观测，用不同偏振器角度或双光束仪器获取光谱。早期目标往往每小时都在变化。</p></li>
+        <li class="reveal"><span>03</span><h3>仪器标定</h3><p>校正平场、波长、零偏振标准星、偏振标准星和仪器偏振，控制亚百分比系统误差。</p></li>
+        <li class="reveal"><span>04</span><h3>提取 I、Q、U</h3><p>在每个波长计算 Stokes 参数、偏振度和偏振角；低信噪比时还需处理偏振度的正偏差。</p></li>
+        <li class="reveal"><span>05</span><h3>扣除星际偏振</h3><p>银河系和宿主星系尘埃会偏振光。利用场星、无偏振谱段、晚期数据和波长规律估计其贡献。</p></li>
+        <li class="reveal"><span>06</span><h3>三维解释</h3><p>联合总光谱、Q–U 结构和时间演化，与三维蒙特卡洛辐射转移模型比较，评估参数简并。</p></li>
+      </ol>
+      <p class="precision-note reveal"><strong>为什么需要大望远镜？</strong>许多关键信号只有千分之几。要在单个波长区间达到约 0.1% 的统计精度，通常需要数量级约 10³ 的信噪比，还要同时压低仪器和天空背景带来的系统误差。</p>
+    </section>
+
+    <section class="science-section faq-section" id="faq">
+      <div class="science-heading reveal">
+        <p class="section-kicker">05 / FAQ</p>
+        <h2>理解超新星偏振时，<br>最容易踩的五个坑。</h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal"><summary>偏振为零，是否证明爆炸完全球对称？<span>＋</span></summary><p>不能。沿对称轴正面观察一个轴对称爆炸，也可能得到很低的净偏振；不同非球对称区域还可能彼此抵消。零信号只能在给定精度、波长和历元下限制某些几何模型。</p></details>
+        <details class="reveal"><summary>偏振越高，形状就一定越扁吗？<span>＋</span></summary><p>不一定。偏振还受电子散射光深、谱线遮挡、亮度分布、观测视角和多次散射影响。把偏振百分数直接换算成轴比，必须依赖辐射转移模型。</p></details>
+        <details class="reveal"><summary>主页上的切向电矢量适用于所有超新星吗？<span>＋</span></summary><p>它代表电子散射光球的基础图景：局部边缘偏振通常沿投影轮廓切向。但谱线形成、团块遮挡、尘埃散射和复杂三维结构都可能改变局部与积分后的方向，因此它是科学示意，不是每颗超新星的逐点测量。</p></details>
+        <details class="reveal"><summary>怎样知道偏振来自超新星，而不是星际尘埃？<span>＋</span></summary><p>星际偏振往往在较宽波长范围内平滑变化，并在 Q–U 平面造成整体平移；超新星本征谱线偏振则与特定吸收线速度结构同步变化。研究者会综合场星、谱线空白区、晚期数据和尘埃波长定律进行估计。</p></details>
+        <details class="reveal"><summary>偏振能唯一重建三维形状吗？<span>＋</span></summary><p>通常不能。偏振是二维天空投影的积分量，不同三维结构可能产生相似信号。多波长、多历元、总光谱、光变曲线和物理模型的联合分析，才能逐步排除简并解。</p></details>
+      </div>
+    </section>
+
+    <section class="reading-section">
+      <div><p class="section-kicker light">FURTHER READING / 延伸阅读</p><h2>从科普继续走向论文</h2></div>
+      <div class="reading-links">
+        <a href="https://doi.org/10.1146/annurev.astro.46.060407.145139" target="_blank" rel="noopener"><span>综述</span><b>Spectropolarimetry of Supernovae</b><i>Wang &amp; Wheeler, 2008 ↗</i></a>
+        <a href="https://doi.org/10.1126/sciadv.adx2925" target="_blank" rel="noopener"><span>早期爆发</span><b>Axisymmetric shock breakout of SN 2024ggi</b><i>Yang et al., 2025 ↗</i></a>
+        <a href="https://academic.oup.com/mnras/article/509/3/4058/6414002" target="_blank" rel="noopener"><span>Ia 型超新星</span><b>Spectropolarimetry of SN 2019ein</b><i>Patra et al., 2022 ↗</i></a>
+        <a href="https://arxiv.org/list/astro-ph/recent" target="_blank" rel="noopener"><span>每日更新</span><b>ArXiv Astrophysics</b><i>Recent submissions ↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i></span><span><b>SNEXPLORE</b><small>Supernova Polarization Group</small></span></a>
+    <p>© 2026 超新星偏振团队</p>
+    <p><a href="index.html#contact">联系我们 ↗</a></p>
+  </footer>
+</body>
+</html>

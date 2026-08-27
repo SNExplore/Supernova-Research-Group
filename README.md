@@ -18,9 +18,10 @@
 ## 内容维护
 
 - 首页内容：`index.html`
+- 研究科普：`research.html`
 - 亮点工作：`highlights.html`
 - 成员页面：`people/`
-- 样式：`css/team.css`
+- 样式：`css/team.css`、`css/research.css`
 - 交互：`js/team.js`
 - 图片：`images/`
 - 视频：`videos/`

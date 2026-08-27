@@ -30,7 +30,7 @@
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
     <nav id="site-nav" aria-label="主导航">
-      <a href="#research">研究</a>
+      <a href="research.html">研究科普</a>
       <a href="highlights.html">亮点工作</a>
       <a href="#people">团队</a>
       <a href="#publications">论文</a>
@@ -108,29 +108,56 @@
     <section class="research section-pad" id="research">
       <div class="section-heading reveal">
         <div><p class="section-kicker">RESEARCH / 研究方向</p><h2>把爆炸的几何，<br>变成可测量的物理。</h2></div>
-        <p>团队连接观测、数据分析与理论计算，覆盖超新星从激波突破到晚期星周相互作用的完整演化。</p>
+        <p>团队连接观测、数据分析与理论计算，覆盖超新星从激波突破到晚期星周相互作用的完整演化。<a class="text-link" href="research.html">阅读详细科普 ↗</a></p>
       </div>
       <div class="research-grid">
         <article class="research-card reveal">
           <div class="research-top"><span>01</span><em>THERMONUCLEAR</em></div>
-          <div class="mini-diagram shell" aria-hidden="true"><i></i><i></i><i></i></div>
+          <figure class="research-plot">
+            <svg viewBox="0 0 300 150" role="img" aria-label="Ia 型超新星连续谱与谱线偏振概念曲线">
+              <path class="plot-axis" d="M30 16V122H284"/>
+              <path class="plot-grid" d="M30 52H284M30 87H284"/>
+              <path class="plot-secondary" d="M30 102C65 103 88 100 112 102S158 101 184 103 230 101 284 102"/>
+              <path class="plot-primary" d="M30 104C65 103 83 102 104 100 120 97 126 49 142 48 159 49 158 96 178 99 197 101 211 98 225 94 239 88 243 67 255 63 268 67 271 96 284 99"/>
+              <text x="104" y="38">Si II</text><text x="234" y="54">Ca II</text><text x="35" y="143">WAVELENGTH →</text><text x="2" y="18">P</text>
+            </svg>
+            <figcaption>谱线峰值追踪元素分布；低连续谱约束整体形状</figcaption>
+          </figure>
           <h3>Ia 型超新星偏振</h3>
           <p>用连续谱与谱线偏振约束白矮星热核爆炸的整体非球对称性、元素分布和观测视角。</p>
-          <small>TYPE IA SUPERNOVAE</small>
+          <a class="card-link" href="research.html#type-ia">TYPE IA SUPERNOVAE · 深入了解 ↗</a>
         </article>
         <article class="research-card reveal">
           <div class="research-top"><span>02</span><em>SHOCK BREAKOUT</em></div>
-          <div class="mini-diagram pulse" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <figure class="research-plot">
+            <svg viewBox="0 0 300 150" role="img" aria-label="超新星爆发后早期偏振随时间变化的概念曲线">
+              <path class="plot-axis" d="M30 16V122H284"/>
+              <path class="plot-grid" d="M30 52H284M30 87H284"/>
+              <path class="plot-primary" d="M31 35C53 37 61 44 78 54 95 65 101 92 125 96 151 100 167 76 190 73 216 70 235 84 284 87"/>
+              <path class="plot-marker" d="M80 16V122M190 16V122"/>
+              <text x="48" y="143">HOURS</text><text x="172" y="143">DAYS</text><text x="2" y="18">P</text><text x="87" y="31">BREAKOUT</text>
+            </svg>
+            <figcaption>小时尺度保留最初几何；快速响应决定能否捕捉</figcaption>
+          </figure>
           <h3>早期激波突破</h3>
           <p>在爆发后数小时至数天内快速响应，在星周相互作用重塑外层之前测量第一缕光携带的几何。</p>
-          <small>RAPID RESPONSE</small>
+          <a class="card-link" href="research.html#shock-breakout">RAPID RESPONSE · 深入了解 ↗</a>
         </article>
         <article class="research-card reveal">
           <div class="research-top"><span>03</span><em>INTERACTION</em></div>
-          <div class="mini-diagram torus" aria-hidden="true"><i></i><b></b></div>
+          <figure class="research-plot">
+            <svg viewBox="0 0 300 150" role="img" aria-label="相互作用超新星在 Stokes Q-U 平面上的概念轨迹">
+              <path class="plot-axis" d="M22 74H286M151 14V130"/>
+              <path class="plot-grid" d="M68 14V130M234 14V130M22 38H286M22 108H286"/>
+              <path class="plot-primary qu-loop" d="M83 99C98 50 151 27 204 45 242 58 219 103 174 110 127 118 91 91 111 64 131 38 186 46 201 72"/>
+              <circle cx="83" cy="99" r="4"/><circle cx="151" cy="27" r="4"/><circle cx="204" cy="45" r="4"/><circle cx="174" cy="110" r="4"/>
+              <text x="278" y="69">Q</text><text x="157" y="20">U</text><text x="28" y="143">MULTI-EPOCH / LINE LOOP</text>
+            </svg>
+            <figcaption>轨迹方向、主轴与环结构编码三维形态及其演化</figcaption>
+          </figure>
           <h3>相互作用超新星几何演化</h3>
           <p>连接多历元偏振、光谱与三维辐射转移，追踪抛射物撞击非球对称星周物质时的形态演化。</p>
-          <small>GEOMETRIC EVOLUTION</small>
+          <a class="card-link" href="research.html#interaction">GEOMETRIC EVOLUTION · 深入了解 ↗</a>
         </article>
       </div>
     </section>

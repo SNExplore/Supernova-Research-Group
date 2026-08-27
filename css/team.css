@@ -374,10 +374,11 @@ h1, h2, h3, p { margin-top: 0; }
   font-size: 14px;
   line-height: 1.9;
 }
+.text-link { display: inline-block; margin-top: 12px; color: var(--cyan); border-bottom: 1px solid rgba(115,220,232,.42); font-size: 10px; font-weight: 700; }
 .research-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); }
 .research-card {
   position: relative;
-  min-height: 480px;
+  min-height: 590px;
   padding: 31px;
   overflow: hidden;
   border-right: 1px solid var(--line);
@@ -392,46 +393,21 @@ h1, h2, h3, p { margin-top: 0; }
 .research-top span { color: var(--copper); font: 400 28px/1 var(--serif); }
 .research-top em { color: var(--muted); font-size: 8px; font-style: normal; font-weight: 800; letter-spacing: .14em; }
 .research-card h3 { margin-bottom: 17px; font: 400 28px/1.25 var(--serif); }
-.research-card p { min-height: 82px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.research-card p { min-height: 112px; color: var(--muted); font-size: 13px; line-height: 1.8; }
 .research-card small { color: var(--muted); font-size: 8px; font-weight: 800; letter-spacing: .14em; }
-.mini-diagram { position: relative; height: 150px; margin: 38px 0 30px; }
-.shell i {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 105px;
-  height: 76px;
-  border: 1px solid var(--copper);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) rotate(-17deg);
-}
-.shell i:nth-child(2) { width: 70px; height: 50px; border-color: var(--cyan); transform: translate(-50%, -50%) rotate(21deg); }
-.shell i:nth-child(3) { width: 8px; height: 8px; border: 0; background: currentColor; box-shadow: 0 0 24px var(--copper); }
-.pulse { display: flex; align-items: end; justify-content: center; gap: 8px; }
-.pulse i { width: 11px; height: 42px; background: var(--cyan); opacity: .75; }
-.pulse i:nth-child(2) { height: 96px; background: var(--copper); }
-.pulse i:nth-child(3) { height: 66px; }
-.pulse i:nth-child(4) { height: 125px; background: var(--copper); opacity: .45; }
-.torus i {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 140px;
-  height: 48px;
-  border: 2px solid var(--copper);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) rotate(-14deg);
-  box-shadow: inset 0 0 0 12px transparent, inset 0 0 0 13px rgba(120, 206, 219, .55);
-}
-.torus b {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 1px;
-  height: 130px;
-  background: var(--cyan);
-  transform: translate(-50%, -50%) rotate(-14deg);
-}
+.research-plot { margin: 30px 0 27px; }
+.research-plot svg { display: block; width: 100%; height: auto; padding: 10px; border: 1px solid var(--line); background: rgba(0,0,0,.17); }
+.research-plot figcaption { min-height: 30px; margin-top: 10px; color: var(--muted); font-size: 8px; line-height: 1.6; }
+.research-plot path { fill: none; }
+.research-plot .plot-axis { stroke: rgba(255,255,255,.4); stroke-width: 1.1; }
+.research-plot .plot-grid { stroke: rgba(255,255,255,.075); stroke-width: 1; }
+.research-plot .plot-primary { stroke: var(--cyan); stroke-width: 2.6; }
+.research-plot .plot-secondary { stroke: rgba(255,255,255,.45); stroke-width: 1.5; }
+.research-plot .plot-marker { stroke: var(--copper); stroke-width: 1; stroke-dasharray: 4 4; }
+.research-plot circle { fill: var(--copper); stroke: var(--night); stroke-width: 2; }
+.research-plot text { fill: var(--muted); font: 7px var(--sans); font-weight: 700; letter-spacing: .09em; }
+.card-link { display: inline-block; padding-bottom: 5px; color: var(--cyan); border-bottom: 1px solid rgba(115,220,232,.34); font-size: 8px; font-weight: 800; letter-spacing: .11em; }
+.research-card:hover .research-plot svg { border-color: rgba(115,220,232,.27); }
 
 .featured-work {
   position: relative;
@@ -884,7 +860,7 @@ footer p { margin: 0; }
   .research-grid { grid-template-columns: 1fr; }
   .research-card { min-height: 390px; border-right: 0; border-bottom: 1px solid var(--line); }
   .research-card:last-child { border-bottom: 0; }
-  .mini-diagram { height: 110px; margin: 25px 0; }
+  .research-plot { max-width: 520px; }
   .feature-media { margin-top: -25px; }
   .feature-metrics .qu-field { grid-column: 1 / -1; }
   .leader-card, .fellow-card { grid-template-columns: 1fr; }
